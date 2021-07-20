@@ -1,14 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+$mdi-font-path: '~@mdi/font/fonts';
+
+@import '~@mdi/font/scss/materialdesignicons.scss';
+@import './custom-theme';
+@import './icon';
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html,
 body {
   height: 100%;
   overflow-x: hidden;
 }
+
 body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }

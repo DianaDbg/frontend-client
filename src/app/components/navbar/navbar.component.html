@@ -1,0 +1,38 @@
+<mat-toolbar class="app-toolbar">
+  <button mat-icon-button aria-label="menu button" matTooltip="{{ 'toggleMenu' | translate }}">
+    <mat-icon class="mdi mdi-menu" matBadge="?" matBadgeColor="primary" matBadgeSize="small"></mat-icon>
+  </button>
+  <button mat-icon-button aria-label="profile button" matTooltip="{{ 'yourAccount' | translate }}">
+    <!-- For non logged in user -->
+    <!-- <mat-icon class="mdi mdi-account-alert" ></mat-icon> -->
+    <!-- For logged in user -->
+    <mat-icon class="mdi mdi-account" matBadge="6" matBadgeColor="primary" matBadgeSize="small"></mat-icon>
+  </button>
+  <span fxFlex></span>
+  <form>
+    <div class="app-toolbar-search-block">
+      <button mat-icon-button aria-label="clear search button" matTooltip="{{ 'clearSearchField' | translate }}">
+        <mat-icon class="mdi mdi-close"></mat-icon>
+      </button>
+      <input type="text" placeholder="{{ 'searchProducts' | translate }}" autofocus />
+      <button mat-icon-button aria-label="search button" matTooltip="{{ 'searchButton' | translate }}">
+        <mat-icon class="mdi mdi-magnify"></mat-icon>
+      </button>
+      <button mat-icon-button aria-label="filter button" matTooltip="{{ 'filters' | translate }}">
+        <mat-icon
+          class="mdi mdi-tune"
+          matBadge="10"
+          matBadgeColor="primary"
+          matBadgeSize="small"
+          matBadgePosition="above|before"
+        ></mat-icon>
+      </button>
+    </div>
+  </form>
+  <button mat-icon-button aria-label="shopping card button" matTooltip="{{ 'viewShoppingCart' | translate }}">
+    <mat-icon class="mdi mdi-cart-variant" matBadge="3" matBadgeColor="primary" matBadgeSize="small"></mat-icon>
+  </button>
+</mat-toolbar>
+<div class="logo" routerLink="/">
+  <img src="./../../assets/img/vanaa_logo.svg" alt="vanaah-logo" />
+</div>

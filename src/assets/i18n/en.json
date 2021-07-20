@@ -1,4 +1,11 @@
 {
+  "clearSearchField": "clear search field",
+  "filters": "Filters",
+  "searchButton": "Search",
+  "searchProducts": "Search Products",
+  "toggleMenu": "Toggle menu",
+  "viewShoppingCart": "view shopping cart",
+  "yourAccount": "Your account",
   "registration": {
     "register": {
       "title": "SUBSCRIBE",

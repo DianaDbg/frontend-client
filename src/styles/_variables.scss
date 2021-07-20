@@ -1,0 +1,9 @@
+$color-primary: #f39200;
+$color-accent: #29235c;
+$color-white: #fff;
+$color-grey: #ccc;
+$grey-palette: (
+  400: lighten($color-grey, 5%),
+  500: $color-grey,
+  600: darken($color-grey, 5%),
+);

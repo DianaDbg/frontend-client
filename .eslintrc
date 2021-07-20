@@ -79,6 +79,7 @@
     ],
     "@typescript-eslint/consistent-type-assertions": "error",
     "@typescript-eslint/dot-notation": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/indent": [
       "error",
       2,

@@ -53,6 +53,9 @@
     "Setting": "Einstellung",
     "Disconnection": "Unterbrechung"
   },
+  "navbar": {
+    "yourProfile": "Your Profile"
+  },
   "update": {
     "validate": "Validieren",
     "title": "Profil aktualisieren"

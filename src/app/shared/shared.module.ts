@@ -9,11 +9,13 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatBadgeModule } from '@angular/material/badge';
 
+import { TranslateModule } from '@ngx-translate/core';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 @NgModule({
-  declarations: [],
-  imports: [],
   exports: [
     CommonModule,
     MatButtonModule,
@@ -27,6 +29,10 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     MatCarouselModule,
     FormsModule,
     ReactiveFormsModule,
+    MatTooltipModule,
+    TranslateModule,
+    FlexLayoutModule,
+    MatBadgeModule,
   ],
 })
 export class SharedModule {}

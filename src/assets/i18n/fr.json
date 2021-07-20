@@ -53,6 +53,9 @@
     "Setting": "Securite",
     "Disconnection": "Deconnexion"
   },
+  "navbar": {
+    "yourProfile": "Your Profile"
+  },
   "update": {
     "validate": "Valider",
     "title": "Mettre à jour le profil"

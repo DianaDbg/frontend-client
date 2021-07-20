@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+
 import { WishlistComponent } from './pages/wishlist/wishlist.component';
 import { CategoryPageComponent } from './pages/category-page/category-page.component';
 import { UpdateCategoriesComponent } from './pages/categories/update-categories/update-categories.component';
@@ -8,11 +12,8 @@ import { CreateCategoriesComponent } from './pages/categories/create-categories/
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { CreateProductComponent } from './pages/products/create-product/create-product.component';
 import { EditStoresComponent } from './pages/stores/edit-stores/edit-stores.component';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RegistrationComponent } from './pages/user/registration/registration.component';
 import { UpdateProfileComponent } from './pages/user/update-profile/update-profile.component';
-import { Routes, RouterModule } from '@angular/router';
 
 import { StoresComponent } from './pages/stores/stores.component';
 import { UpdateProductComponent } from './pages/products/update-product/update-product.component';
@@ -30,6 +31,8 @@ import { ConditionUsedComponent } from './pages/user/condition-used/condition-us
 import { SellerOrderComponent } from './pages/order/seller-order/seller-order.component';
 import { ProductResultComponent } from './pages/products/product-result/product-result.component';
 
+import { HomeComponent as NewHomeComponent } from './pages/home-1/home.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -38,6 +41,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+  },
+  {
+    path: 'new-home',
+    component: NewHomeComponent,
   },
   {
     path: 'wishlist',
