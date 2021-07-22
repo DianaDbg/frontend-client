@@ -1,4 +1,4 @@
-<mat-toolbar class="app-toolbar">
+<mat-toolbar class="app-toolbar" [ngClass]="{ 'non-scrolled': !hasScrolled }">
   <button mat-icon-button aria-label="menu button" matTooltip="{{ 'toggleMenu' | translate }}">
     <mat-icon class="mdi mdi-menu" matBadge="?" matBadgeColor="primary" matBadgeSize="small"></mat-icon>
   </button>
@@ -10,7 +10,7 @@
   </button>
   <span fxFlex></span>
   <form>
-    <div class="app-toolbar-search-block">
+    <div class="search-block">
       <button mat-icon-button aria-label="clear search button" matTooltip="{{ 'clearSearchField' | translate }}">
         <mat-icon class="mdi mdi-close"></mat-icon>
       </button>
@@ -33,6 +33,6 @@
     <mat-icon class="mdi mdi-cart-variant" matBadge="3" matBadgeColor="primary" matBadgeSize="small"></mat-icon>
   </button>
 </mat-toolbar>
-<div class="logo" routerLink="/">
+<div class="logo" [ngClass]="{ 'non-scrolled': !hasScrolled }" routerLink="/">
   <img src="./../../assets/img/vanaa_logo.svg" alt="vanaah-logo" />
 </div>

@@ -8,10 +8,10 @@
   @include shadow();
 
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-image: url('../../../assets/img/navbar-bg.svg');
 
-  &-search-block {
+  .search-block {
     min-width: 500px;
     display: flex;
     flex-direction: row;
@@ -28,26 +28,53 @@
       padding-left: 8px;
     }
   }
+
+  &.non-scrolled {
+    padding: 40px 24px;
+    font-size: 1.8em;
+
+    .mat-icon {
+      font-size: 1.8em;
+    }
+
+    input[type='text'] {
+      font-size: 0.9em;
+    }
+
+    .search-block {
+      padding: 4px;
+    }
+  }
 }
 
 .logo {
   @include shadow();
 
   background-color: $color-white;
-  width: 210px;
-  height: 200px;
   position: fixed;
-  top: -95px;
-  left: 50%;
-  border-radius: 50%;
   z-index: 2;
   cursor: pointer;
+  left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
+  width: 160px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
 
   img {
-    width: 200px;
-    height: 260px;
+    width: 154px;
+  }
+
+  &.non-scrolled {
+    width: 250px;
+    height: 210px;
+    top: -95px;
+    border-radius: 50%;
+
+    img {
+      width: 240px;
+      height: 270px;
+    }
   }
 }

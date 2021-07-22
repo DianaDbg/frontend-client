@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { SharedModule } from '../../shared/shared.module';
 import { NavbarComponent } from './navbar.component';
 
 @NgModule({
-  imports: [SharedModule, TranslateModule],
+  imports: [MatToolbarModule, SharedModule],
   declarations: [NavbarComponent],
   exports: [NavbarComponent],
   providers: [],

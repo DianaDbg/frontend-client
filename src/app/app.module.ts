@@ -1,3 +1,4 @@
+import { LOCATION_INITIALIZED } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { APP_INITIALIZER, Injector, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,7 +12,6 @@ import { StripeModule } from 'stripe-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/shared/menu/menu.component';
 import { SearchBarComponent } from './components/shared/search-bar/search-bar.component';
 import { SearchComponent } from './components/shared/search/search.component';
@@ -46,8 +46,8 @@ import { FilterMinMaxPricePipe } from './pipes/filter-min-max-price.pipe';
 import { FilterPricePipe } from './pipes/filter-price.pipe';
 
 import { SharedModule } from './shared/shared.module';
-import { HomeModule } from './pages/home-1/home.module';
-import { LOCATION_INITIALIZED } from '@angular/common';
+import { MasterModule } from './pages/master/master.module';
+import { FooterModule } from './components/footer/footer.module';
 
 export const rootLoaderFactory = (http: HttpClient) => new TranslateHttpLoader(http);
 
@@ -89,7 +89,6 @@ export const applicationInitializerFactory = (translate: TranslateService, injec
     ResetPassEmailComponent,
     UpdateCategoriesComponent,
     CategoryPageComponent,
-    FooterComponent,
     ProfileComponent,
     OrderListComponent,
     OrderDetailsComponent,
@@ -123,7 +122,8 @@ export const applicationInitializerFactory = (translate: TranslateService, injec
     ),
 
     SharedModule,
-    HomeModule,
+    MasterModule,
+    FooterModule, // is this needed here?
   ],
   providers: [
     CookieService,

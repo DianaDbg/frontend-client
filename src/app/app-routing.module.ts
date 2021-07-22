@@ -31,7 +31,7 @@ import { ConditionUsedComponent } from './pages/user/condition-used/condition-us
 import { SellerOrderComponent } from './pages/order/seller-order/seller-order.component';
 import { ProductResultComponent } from './pages/products/product-result/product-result.component';
 
-import { HomeComponent as NewHomeComponent } from './pages/home-1/home.component';
+import { MasterComponent } from './pages/master/master.component';
 
 const routes: Routes = [
   {
@@ -44,7 +44,7 @@ const routes: Routes = [
   },
   {
     path: 'new-home',
-    component: NewHomeComponent,
+    component: MasterComponent,
   },
   {
     path: 'wishlist',
