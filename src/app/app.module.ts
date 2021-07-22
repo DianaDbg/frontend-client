@@ -9,6 +9,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { CookieService } from 'ngx-cookie-service';
 import { StripeModule } from 'stripe-angular';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { SearchComponent } from './components/shared/search/search.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { StoresComponent } from './pages/stores/list-store/stores.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { CreateCategoriesComponent } from './pages/categories/create-categories/create-categories.component';
 import { UpdateCategoriesComponent } from './pages/categories/update-categories/update-categories.component';
@@ -34,7 +36,6 @@ import { ProductsComponent } from './pages/products/products.component';
 import { UpdateProductComponent } from './pages/products/update-product/update-product.component';
 import { CreateStoresComponent } from './pages/stores/create-stores/create-stores.component';
 import { EditStoresComponent } from './pages/stores/edit-stores/edit-stores.component';
-import { StoresComponent } from './pages/stores/stores.component';
 import { ConditionUsedComponent } from './pages/user/condition-used/condition-used.component';
 import { ProfileComponent } from './pages/user/profile/profile.component';
 import { RegistrationComponent } from './pages/user/registration/registration.component';
@@ -48,6 +49,7 @@ import { FilterPricePipe } from './pipes/filter-price.pipe';
 import { SharedModule } from './shared/shared.module';
 import { MasterModule } from './pages/master/master.module';
 import { FooterModule } from './components/footer/footer.module';
+import { StoreProductsComponent } from './pages/stores/store-products/store-products.component';
 
 export const rootLoaderFactory = (http: HttpClient) => new TranslateHttpLoader(http);
 
@@ -100,6 +102,7 @@ export const applicationInitializerFactory = (translate: TranslateService, injec
     WishlistComponent,
     FilterPricePipe,
     FilterMinMaxPricePipe,
+    StoreProductsComponent,
   ],
 
   imports: [
@@ -107,6 +110,7 @@ export const applicationInitializerFactory = (translate: TranslateService, injec
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxPaginationModule,
     SweetAlert2Module.forRoot(),
     TranslateModule.forRoot({
       loader: {

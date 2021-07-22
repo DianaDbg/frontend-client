@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar> -->
 <div class="container">
   <div class="text-right">
     <button mat-raised-button color="primary" routerLink="/create-store">
@@ -26,7 +26,7 @@
     <div style="width: 35rem" *ngFor="let store of stores">
       <div class="store">
         <div style="display: flex">
-          <div class="card-body name" routerLink="">
+          <div class="card-body name" routerLink="/store-products/{{ store.id }}">
             <div class="img mb-2">
               <img class="img-thumbnail" src="{{ store.image }}" alt="" />
             </div>
