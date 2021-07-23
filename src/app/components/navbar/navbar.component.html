@@ -1,5 +1,5 @@
 <mat-toolbar class="app-toolbar" [ngClass]="{ 'non-scrolled': !hasScrolled }">
-  <button mat-icon-button aria-label="menu button" matTooltip="{{ 'toggleMenu' | translate }}">
+  <button (click)="onToggleMenu()" mat-icon-button aria-label="menu button" matTooltip="{{ 'toggleMenu' | translate }}">
     <mat-icon class="mdi mdi-menu" matBadge="?" matBadgeColor="primary" matBadgeSize="small"></mat-icon>
   </button>
   <button mat-icon-button aria-label="profile button" matTooltip="{{ 'yourAccount' | translate }}">

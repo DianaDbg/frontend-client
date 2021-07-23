@@ -1,4 +1,4 @@
-import { HostListener } from '@angular/core';
+import { HostListener, EventEmitter, Output } from '@angular/core';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  @Output() toggleMenu = new EventEmitter();
   hasScrolled = false;
 
   @HostListener('window:scroll', ['$event'])
@@ -16,5 +17,9 @@ export class NavbarComponent {
     } else if (window.pageYOffset < 100 && this.hasScrolled === true) {
       this.hasScrolled = false;
     }
+  }
+
+  onToggleMenu() {
+    this.toggleMenu.emit();
   }
 }

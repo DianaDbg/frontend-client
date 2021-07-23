@@ -1,33 +1,40 @@
-<app-navbar-1></app-navbar-1>
+<app-navbar-1 (toggleMenu)="toggleMenuHandler()"></app-navbar-1>
 <mat-sidenav-container>
-  <mat-sidenav mode="side" opened class="mat-elevation-z1">
-    <app-sidenav></app-sidenav>
+  <mat-sidenav mode="side" [opened]="isSidenavOpen" class="mat-elevation-z1">
+    <app-sidenav [isLarge]="isLargeSidenav"></app-sidenav>
   </mat-sidenav>
-  <mat-sidenav-content class="app-contents">
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-    <h1>New Home</h1>
-
+  <mat-sidenav-content>
+    <section>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+      <h1>Changing content goes here</h1>
+    </section>
     <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
