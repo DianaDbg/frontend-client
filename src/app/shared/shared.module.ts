@@ -12,6 +12,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatBadgeModule } from '@angular/material/badge';
 import { TranslateModule } from '@ngx-translate/core';
+import { MatListModule } from '@angular/material/list';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 @NgModule({
@@ -20,7 +21,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatSnackBarModule, // check if we are using this
+    MatSnackBarModule,
     MatTabsModule,
     MatInputModule,
     MatCheckboxModule,
@@ -31,6 +32,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     TranslateModule,
     FlexLayoutModule,
     MatBadgeModule,
+    MatListModule,
   ],
 })
 export class SharedModule {}

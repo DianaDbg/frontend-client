@@ -1,33 +1,102 @@
 <div class="sidenav">
-  Sidenav content Sidenav
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
-  <h1>Sidenav content Sidenav</h1>
+  <mat-nav-list>
+    <a mat-list-item>
+      <mat-icon
+        matListIcon
+        class="mdi mdi-cart-variant"
+        matTooltip="{{ 'shoppingCart' | translate }}"
+        matBadge="3"
+        matBadgeColor="primary"
+        matBadgeSize="small"
+      >
+      </mat-icon>
+      <h4 matLine>{{ 'shoppingCart' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-account-cash" matTooltip="{{ 'becomeSeller' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'becomeSeller' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon
+        matListIcon
+        class="mdi mdi-bell"
+        matTooltip="{{ 'notifications' | translate }}"
+        matBadge="7"
+        matBadgeColor="primary"
+        matBadgeSize="small"
+      ></mat-icon>
+      <h4 matLine>{{ 'notifications' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-forum" matTooltip="{{ 'messages' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'messages' | translate }}</h4>
+    </a>
+  </mat-nav-list>
+  <mat-divider></mat-divider>
+  <mat-nav-list>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-account" matTooltip="{{ 'myProfile' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'myProfile' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-account-cash" matTooltip="{{ 'myPurchases' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'myPurchases' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-map-marker-radius" matTooltip="{{ 'myDeliveryAddresses' | translate }}">
+      </mat-icon>
+      <h4 matLine>{{ 'myDeliveryAddresses' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-heart" matTooltip="{{ 'myWishlist' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'myWishlist' | translate }}</h4>
+    </a>
+  </mat-nav-list>
+  <mat-divider></mat-divider>
+  <mat-nav-list>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-whistle" matTooltip="{{ 'promotions' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'promotions' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-table" matTooltip="{{ 'products' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'products' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-view-dashboard" matTooltip="{{ 'productCategories' | translate }}">
+      </mat-icon>
+      <h4 matLine>{{ 'productCategories' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-wan" matTooltip="{{ 'countriesAndRegions' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'countriesAndRegions' | translate }}</h4>
+    </a>
+  </mat-nav-list>
+  <mat-divider></mat-divider>
+  <mat-nav-list>
+    <a mat-list-item>
+      <mat-icon
+        matListIcon
+        class="mdi mdi-list-status"
+        matTooltip="{{ 'myOrders' | translate }}"
+        matBadge="28"
+        matBadgeColor="primary"
+        matBadgeSize="small"
+      >
+      </mat-icon>
+      <h4 matLine>{{ 'myOrders' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-finance" matTooltip="{{ 'myNumbers' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'myNumbers' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-bag-checked" matTooltip="{{ 'myShops' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'myShops' | translate }}</h4>
+    </a>
+    <a mat-list-item>
+      <mat-icon matListIcon class="mdi mdi-table-account" matTooltip="{{ 'myShopProducts' | translate }}"></mat-icon>
+      <h4 matLine>{{ 'myShopProducts' | translate }}</h4>
+    </a>
+  </mat-nav-list>
 </div>
