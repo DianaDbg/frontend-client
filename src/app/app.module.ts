@@ -50,6 +50,7 @@ import { SharedModule } from './shared/shared.module';
 import { MasterModule } from './pages/master/master.module';
 import { FooterModule } from './components/footer/footer.module';
 import { StoreProductsComponent } from './pages/stores/store-products/store-products.component';
+import { ProductComponent } from './components/products/products.component';
 
 export const rootLoaderFactory = (http: HttpClient) => new TranslateHttpLoader(http);
 
@@ -97,6 +98,7 @@ export const applicationInitializerFactory = (translate: TranslateService, injec
     ConditionUsedComponent,
     SellerOrderComponent,
     SearchBarComponent,
+    ProductComponent,
     ProductResultComponent,
     SearchComponent,
     WishlistComponent,
