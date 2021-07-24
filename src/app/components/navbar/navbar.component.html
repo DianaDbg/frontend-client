@@ -8,6 +8,9 @@
     <!-- For logged in user -->
     <mat-icon class="mdi mdi-account" matBadge="6" matBadgeColor="primary" matBadgeSize="small"></mat-icon>
   </button>
+  <select (change)="onLanguageOptionChange($event)">
+    <option *ngFor="let lang of flagsAndLanguages" value="{{ lang.value }}">{{ lang.displayName }}</option>
+  </select>
   <span fxFlex></span>
   <form>
     <div class="search-block">
